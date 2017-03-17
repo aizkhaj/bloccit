@@ -8,6 +8,11 @@ require 'random_data'
   )
 end
 
+Post.find_or_create_by!(
+  title: "blablablabla",
+  body: "more bla"
+)
+
 posts = Post.all
 
 #Create Comments
@@ -18,6 +23,11 @@ posts = Post.all
   )
 end
 
+# Comment.find_or_create_by!(
+#   post: 151,
+#   body: "more bla"
+# )
+
 puts "Seed finished"
 puts "#{Post.count} posts created"
-puts "#{Comment.count} comments created" 
+puts "#{Comment.count} comments created"
