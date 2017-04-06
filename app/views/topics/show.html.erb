@@ -23,8 +23,8 @@
        <div class="media">
          <div class="media-body">
            <h4 class="media-heading">
-             Sponsored Post
-             <%= link_to spost.title, topic_sponsored_post_path(@topic, spost) %>
+              <%= link_to spost.title, topic_sponsored_post_path(@topic, spost) %>
+              <label class="label label-primary">Sponsored Post</label>
            </h4>
            <small>
              submitted <%= time_ago_in_words(spost.created_at) %> ago <br>
