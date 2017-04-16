@@ -16,5 +16,5 @@ class User < ActiveRecord::Base
   has_secure_password
   # Adds methods to set and authenticate against a BCrypt password. This mechanism requires you to have a password_digest attribute.
 
-  enum role: [:member, :admin]
+  enum role: [:member, :admin, :moderator]
 end
