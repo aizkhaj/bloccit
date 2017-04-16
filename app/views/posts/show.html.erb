@@ -8,6 +8,14 @@
 <div class="row">
   <div class="col-md-8">
     <p><%= @post.body %></p>
+    <div>
+      <h3>Comments</h3>
+      <%= render @post.comments %>
+      <!-- When we use render this way, the method recognizes that we're rendering a collection, and iterates through that collection. For each comment belonging to @post, the render method searches for the conventionally named partial file (comments/_comment.html.erb) and renders it. comment is automatically passed to the partial as a local variable. -->
+    </div>
+      <% if current_user %>
+        <%= render 'comments/form', comment: Comment.new, post: @post %>
+      <% end %>
   </div>
   <% if user_is_authorized_for_post?(@post) %>
     <div class="col-md-4">
