@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   end
   # We pass resources :posts to the resources :topics block. This nests the post routes under the topic routes.
 
-  resources :users, only: [:new, :create]
+  resources :users, only: [:new, :create, :show]
 
   resources :sessions, only: [:new, :create, :destroy]
 
