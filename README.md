@@ -1,6 +1,6 @@
 == README
 
-## Bloccit: a Reddit replica to teach the fundamentals of web development and Rails.
+## Linkit: a link sharing web application inspired by Reddit I've built to learn the fundamentals of backend development and Rails.
 
 Made with my mentor at [Bloc](http://bloc.io).
 
