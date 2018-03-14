@@ -1,29 +1,17 @@
-== README
+# Linkit: a link sharing web application inspired by Reddit
 
-## Linkit: a link sharing web application inspired by Reddit I've built to learn the fundamentals of backend development and Rails.
+I've built this one to learn the fundamentals of backend development using Ruby on Rails.
 
-Made with my mentor at [Bloc](http://bloc.io).
+## The Build
 
-* Ruby version: 2.4.0
+This project is my foray into backend development with Ruby on Rails. For this app, I hosted it on Heroku. A lot of the frontend elements are done with Bootstrap UI.
 
-* Rails version: 4.2.5
+In terms of functionality, there's a whole lot packed into this app:
 
-* System dependencies
+* User authentication and authorization rules
+* Data entry validation rules
+* A user profile that also serves a Gravatar profile picture.
+* User's ability to have favorite posts, as well as the ability to vote and comment on posts.
+* ActionMailer integration to send out emails to users for new comments on their posts.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+More importantly, this is also where a lot of Test Driven Development was implemented. There are RSpec unit tests for each model and controller in place.
